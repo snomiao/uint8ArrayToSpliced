@@ -2,7 +2,13 @@
   "name": "uint8array-tospliced",
   "version": "0.0.0",
   "description": "To install dependencies:",
-  "keywords": ["uint8array", "concat", "delete", "to-spliced", "splice"],
+  "keywords": [
+    "uint8array",
+    "concat",
+    "delete",
+    "to-spliced",
+    "splice"
+  ],
   "homepage": "https://github.com/snomiao/uint8ArrayToSpliced",
   "bugs": {
     "url": "https://github.com/snomiao/uint8ArrayToSpliced/issues"
@@ -29,44 +35,13 @@
     "test": "bun test"
   },
   "dependencies": {
-    "ansi-styles": "^5.2.0",
-    "braces": "^3.0.3",
-    "bun-types": "^1.2.4",
-    "chalk": "^4.1.2",
-    "ci-info": "^3.9.0",
-    "color-convert": "^2.0.1",
-    "color-name": "^1.1.4",
-    "diff-sequences": "^29.6.3",
-    "escape-string-regexp": "^2.0.0",
-    "expect": "^29.7.0",
-    "fill-range": "^7.1.1",
-    "graceful-fs": "^4.2.11",
-    "has-flag": "^4.0.0",
-    "is-number": "^7.0.0",
-    "jest-diff": "^29.7.0",
-    "jest-get-type": "^29.6.3",
-    "jest-matcher-utils": "^29.7.0",
-    "jest-message-util": "^29.7.0",
-    "jest-util": "^29.7.0",
-    "js-tokens": "^4.0.0",
-    "micromatch": "^4.0.8",
-    "picocolors": "^1.1.1",
-    "picomatch": "^2.3.1",
-    "pretty-format": "^29.7.0",
-    "react-is": "^18.3.1",
-    "slash": "^3.0.0",
-    "stack-utils": "^2.0.6",
-    "supports-color": "^7.2.0",
-    "to-regex-range": "^5.0.1",
-    "typescript": "^5.8.2",
-    "uint8array-extras": "^1.4.0",
-    "undici-types": "^6.20.0"
+    "uint8array-extras": "^1.4.0"
   },
   "devDependencies": {
+    "typescript": "^5.8.2",
     "@types/bun": "^1.2.4",
     "@types/jest": "^29.5.14",
-    "husky": "^9.1.7",
-    "semantic-release": "^24.2.3"
+    "husky": "^9.1.7"
   },
   "peerDependencies": {
     "typescript": "^5.8.2"
