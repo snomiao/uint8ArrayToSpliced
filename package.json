@@ -16,7 +16,8 @@
     "build:umd": "bunx rollup dist/index.js --file dist/index.umd.js --format umd --name \"main\"",
     "prerelease": "bun run build && bun run test",
     "release": "bunx standard-version && git push --follow-tags && npm publish",
-    "test": "bun test"
+    "test": "bun test",
+    "prepare": "husky"
   },
   "dependencies": {
     "ansi-styles": "^5.2.0",
@@ -54,7 +55,9 @@
   },
   "devDependencies": {
     "@types/bun": "^1.2.4",
-    "@types/jest": "^29.5.14"
+    "@types/jest": "^29.5.14",
+    "husky": "^9.1.7",
+    "semantic-release": "^24.2.3"
   },
   "peerDependencies": {
     "typescript": "^5.8.2"
