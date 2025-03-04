@@ -2,22 +2,31 @@
   "name": "uint8array-tospliced",
   "version": "0.0.0",
   "description": "To install dependencies:",
-  "keywords": [],
-  "homepage": "http://#readme",
+  "keywords": ["uint8array", "concat", "delete", "to-spliced", "splice"],
+  "homepage": "https://github.com/snomiao/uint8ArrayToSpliced",
+  "bugs": {
+    "url": "https://github.com/snomiao/uint8ArrayToSpliced/issues"
+  },
   "license": "MIT",
   "author": "snomiao <snomiao@gmail.com>",
   "files": [
     "*.ts",
+    "*.ts",
+    "dist",
     "dist"
   ],
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snomiao/uint8ArrayToSpliced.git"
+  },
   "scripts": {
     "build": "bun build index.ts --outdir=dist && bun build:umd",
-    "build:umd": "bunx rollup dist/index.js --file dist/index.umd.js --format umd --name \"main\"",
+    "build:umd": "bunx rollup dist/index.js --file dist/index.umd.js --format umd --name \"uint8array-tospliced\"",
+    "prepare": "husky",
     "prerelease": "bun run build && bun run test",
     "release": "bunx standard-version && git push --follow-tags && npm publish",
-    "test": "bun test",
-    "prepare": "husky"
+    "test": "bun test"
   },
   "dependencies": {
     "ansi-styles": "^5.2.0",
